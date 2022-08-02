@@ -15,7 +15,7 @@ class KodiAddon(object):
         self.path = self._addon.getAddonInfo('path')
     
     def run(self):
-        check_call(['bash', self.path + '/resources/lib/start.sh'])
+        check_call(['bash', self.path + 'resources/lib/start.sh'])
 
 def main():
     addon = KodiAddon()
